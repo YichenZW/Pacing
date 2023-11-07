@@ -1,6 +1,6 @@
 # Improving Pacing in Long-Form Story Planning
 
-This repository includes the code implementation of the paper  <u>Improving Pacing in Long-Form Story Planning</u> by *Yichen Wang, Kevin Yang, Xiaoming Liu,* and *Dan Klein*. Corresponding datasets are in the [huggingface hub]([ZachW/GPT-BookSum · Datasets at Hugging Face](https://huggingface.co/datasets/ZachW/GPT-BookSum)).
+This repository includes the code implementation of the paper  <u>Improving Pacing in Long-Form Story Planning</u> by *Yichen Wang, Kevin Yang, Xiaoming Liu,* and *Dan Klein*. Corresponding datasets are in the [huggingface hub](https://huggingface.co/datasets/ZachW/GPT-BookSum).
 
 ### Installation
 
@@ -40,7 +40,7 @@ import openai
 openai.api_key = os.environ["OPENAI_API_KEY"]
 ```
 
-(6) Download the GPT_BookSum dataset from the [huggingface hub]([ZachW/GPT-BookSum · Datasets at Hugging Face](https://huggingface.co/datasets/ZachW/GPT-BookSum)). Save it into `data/`.
+(6) Download the GPT_BookSum dataset from the [huggingface hub](https://huggingface.co/datasets/ZachW/GPT-BookSum). Save it into `data/`.
 
 (7) Train and save the concreteness evaluator.
 
