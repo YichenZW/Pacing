@@ -1,0 +1,15 @@
+*.jsonl
+*.json
+*.txt
+*.pt
+*.log
+*.zip
+*.csv
+*.gathered
+*.wandb
+*.clean
+*pickle
+*.pth
+/wandb
+/data
+/results
