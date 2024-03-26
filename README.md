@@ -81,7 +81,7 @@ CUDA_VISIBLE_DEVICES=0 python -u scripts/main.py {{{ALPA_ARGS}}} --controller lo
 
 setting `--draft-model-string` to `gpt-3.5-turbo` if you what to use ChatGPT instead of original OPT-175B. `ALPA_ARGS` is only needed if you want to use the free public Alpa OPT-175B API.
 
-For other detailed descriptions, please refer to [DOC repo]([GitHub - yangkevin2/doc-story-generation](https://github.com/yangkevin2/doc-story-generation), Section Main Story Generation Command.
+For other detailed descriptions, please refer to DOC repo [yangkevin2/doc-story-generation](https://github.com/yangkevin2/doc-story-generation), Section Main Story Generation Command.
 
 If you want to generate a batch of stories, you can refer to the scripts `story_generation/scripts/gen_baseline.sh` and `story_generation/scripts/gen_concoct.sh`.
 
@@ -92,7 +92,35 @@ python story_generation/direct_gen.py
 ```
 
 
-
 ### Citations
 
-[TODO]
+```
+@article{wang2023improving,
+  title={Improving Pacing in Long-Form Story Planning},
+  author={Wang, Yichen and Yang, Kevin and Liu, Xiaoming and Klein, Dan},
+  journal={arXiv preprint arXiv:2311.04459},
+  year={2023}
+}
+```
+EMNLP2023 citation:
+```
+@inproceedings{wang-etal-2023-improving-pacing,
+    title = "Improving Pacing in Long-Form Story Planning",
+    author = "Wang, Yichen  and
+      Yang, Kevin  and
+      Liu, Xiaoming  and
+      Klein, Dan",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.723",
+    doi = "10.18653/v1/2023.findings-emnlp.723",
+    pages = "10788--10845",
+    abstract = "Existing LLM-based systems for writing long-form stories or story outlines frequently suffer from unnatural pacing, whether glossing over important events or over-elaborating on insignificant details, resulting in a jarring experience for the reader. We propose a **CONC**rete **O**utline **C**on**T**rol (CONCOCT) system to improve pacing when automatically generating story outlines. We first train a *concreteness evaluator* to judge which of two events is more concrete (low-level-detailed). This evaluator can then be used to control pacing in hierarchical outline generation; in this work, we explore a *vaguest-first* expansion procedure that aims for uniform pacing. We further use the evaluator to filter new outline items based on predicted concreteness. Compared to a baseline hierarchical outline generator, humans judge CONCOCT{'}s pacing to be more consistent over 57{\%} of the time across multiple outline lengths; the gains also translate to downstream stories. All code, data, and models are open-sourced.",
+}
+```
