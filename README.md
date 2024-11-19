@@ -1,6 +1,12 @@
 # Improving Pacing in Long-Form Story Planning
 
-This repository includes the code implementation of the paper  <u>Improving Pacing in Long-Form Story Planning</u> by *Yichen Wang, Kevin Yang, Xiaoming Liu,* and *Dan Klein*. Corresponding datasets are in the [huggingface hub](https://huggingface.co/datasets/ZachW/GPT-BookSum).
+This repository includes the code implementation of the paper  <u>[Improving Pacing in Long-Form Story Planning](https://arxiv.org/abs/2311.04459)</u> (EMNLP 2023 Findings) by *Yichen Wang, Kevin Yang, Xiaoming Liu,* and *Dan Klein* at UC Berkeley. Corresponding datasets are in the [huggingface hub](https://huggingface.co/datasets/ZachW/GPT-BookSum).
+
+### Updates!
+
+[*Nov. 18, 2024*] **We released the trained concreteness evaluator model on [huggingface](https://huggingface.co/ZachW/pacing-judge)!** Welcome to use it off the shelf.
+
+Note that the Ranker implementation (ranker.py) is different if you want to use the model directly via huggingface. Please carefully check the Usage section on the huggingface page.
 
 ### Installation
 
@@ -42,7 +48,7 @@ openai.api_key = os.environ["OPENAI_API_KEY"]
 
 (6) Download the GPT_BookSum dataset from the [huggingface hub](https://huggingface.co/datasets/ZachW/GPT-BookSum). Save it into `data/`.
 
-(7) Train and save the concreteness evaluator.
+(7) Train and save the concreteness evaluator. [Update: Now you can directly access a trained one from [huggingface](https://huggingface.co/ZachW/pacing-judge)!]
 
 ```shell
 python concrete_evaluator/train.py
